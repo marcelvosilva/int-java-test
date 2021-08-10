@@ -1,0 +1,312 @@
+{
+	"info": {
+		"_postman_id": "d0bcce57-d6fa-4eea-b342-fb73059c25cd",
+		"name": "TesteInter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddUsuario",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Marcel Teste\",\n    \"email\": \"marcelvinicius.os@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsuarioByIdWithPrivateKey",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "private-key",
+						"value": "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCdYv4q1s9M57ysm1dCLShVGYBf0An9aXkcsvFSDnrKrhyCDHwReU0mhBcHovKa/11YQZKE14sN+98MCGNLLTV9l5dkvZqV/EaWLdtma+fW1G4vPfHwDErTo+zyInr0YwYguvJGHmFEiobavX56kOaQwABb/39upbGeZM99KCzZaKXLmgPNjEMT7tOaFNqgQUB+TW0XAq1/jy6yh++pr/G0vGHUcqtwIjyFv3KqzkBo0Qf6DNkE65/8YdmkoseNWaC9x6/4x1fPx+QTIDFGSJLQIEC6+n+A9tbkKz5gdb3gXnEMquOHW2Z45kJCj9DW1CWTYXgJtiDcPk19eFgueAS1AgMBAAECggEAZmqfyRLGDV6TqaLgkoC+STpyDmdbyNsU4/cSEHq5ryDEDmC/b8OGz/SO4/pGc1SP0rnA9c8pfu0TRUpECwydTWATNYwoh0eGS34F0s2PLX5JQVbHFJV7L+PxcdO8PUIfH7dnpvdoBmk6vicnoeyfDTzUPwmxTDhosBEb8G7vWH23vTn06uIPW8Z0LxV1xq5F6rCpf+l8dZVjQQLeYHty+YojhrqKS+O+u5KhemVvu2GAZ5IwP+t1rIf+6IfZMe5UmMhGaleMg0x6+1Av1AJHHArGKhpcfHHETl3CBn0virKWjpat/tu7fX+h6sJ5+1siX0mH/NPKKUA58kBzI5KitQKBgQDoHKGrAP+OhrHOUQnSy7ujLi5XOOZTJ0PlAPOekHfequd5NGGcuQ8pD0QQo7alsxyGlIW2OJs2xtgS5kq9WBWZy7pRMq5ijpVMwW7XZ1KFQqjqJY7dU+/76P/3DCWtKUBdFJBdnGacqMw8fnFEASpaSLVf92LDe87ge1u9pN1+SwKBgQCtlZqvUV98KB3rqYuzY230Oi2G5XI7ddKXWVypreJ1zU+kD/zhzMMjssoiBqqhHB3tZd9aigVza343549z+/ExGKUQoEfAHn1alyG76C5GLkfu4W+zKKxaab7iYqVmg3gKOcEjbuSEzDYMBMRLSRDVTspsouvv6PW5ewqFXyKo/wKBgDcR2/WThg6NvI/jwD3oInuj0FDXaiYecchagnKDej01NTgXinVBnuwx+AcuoH4N0d3ITTUflwvW/5r0UpU72dwkbu8m5CL0C04rsp2eoQCHAUaUZKH0cULGVDyMAEBmQiQTZfEf02Sl09cidMMat662A3piWmdg74NpISoMfJSjAoGAbIPcAcGzGaDSo6KITQrZkBZWo8AIm5daoXch8IldyxsgsIW2J0qkq0p4BrF4NeOn6eMHsEgchD0s2LIQAgf8jh7EAhLRCA+HefyFAD1zwDfqjDGubKf+pz74L/pPQDjr8CiOzyHiBgrLttO8CvyQY2kwLp3jNUXDZ8K9nwcMWe0CgYBp0n8b3wbN8LqT0909zRg/1Gx6nmF6sO72TgDmnmSvEedL11YcfdyWQykL1ctSiomvmjPW+F0Tl3zcjz3Xci884+tc1Y6a37n6QQpvTspVPx7PDQ0UOvoKRrujAian42lbRPbpMaSdtM+T4g6Ce+ocV49wqAbzaeG/kWMuV6h1AA==",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsuarioById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "private-key",
+						"type": "text",
+						"value": "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCdYv4q1s9M57ysm1dCLShVGYBf0An9aXkcsvFSDnrKrhyCDHwReU0mhBcHovKa/11YQZKE14sN+98MCGNLLTV9l5dkvZqV/EaWLdtma+fW1G4vPfHwDErTo+zyInr0YwYguvJGHmFEiobavX56kOaQwABb/39upbGeZM99KCzZaKXLmgPNjEMT7tOaFNqgQUB+TW0XAq1/jy6yh++pr/G0vGHUcqtwIjyFv3KqzkBo0Qf6DNkE65/8YdmkoseNWaC9x6/4x1fPx+QTIDFGSJLQIEC6+n+A9tbkKz5gdb3gXnEMquOHW2Z45kJCj9DW1CWTYXgJtiDcPk19eFgueAS1AgMBAAECggEAZmqfyRLGDV6TqaLgkoC+STpyDmdbyNsU4/cSEHq5ryDEDmC/b8OGz/SO4/pGc1SP0rnA9c8pfu0TRUpECwydTWATNYwoh0eGS34F0s2PLX5JQVbHFJV7L+PxcdO8PUIfH7dnpvdoBmk6vicnoeyfDTzUPwmxTDhosBEb8G7vWH23vTn06uIPW8Z0LxV1xq5F6rCpf+l8dZVjQQLeYHty+YojhrqKS+O+u5KhemVvu2GAZ5IwP+t1rIf+6IfZMe5UmMhGaleMg0x6+1Av1AJHHArGKhpcfHHETl3CBn0virKWjpat/tu7fX+h6sJ5+1siX0mH/NPKKUA58kBzI5KitQKBgQDoHKGrAP+OhrHOUQnSy7ujLi5XOOZTJ0PlAPOekHfequd5NGGcuQ8pD0QQo7alsxyGlIW2OJs2xtgS5kq9WBWZy7pRMq5ijpVMwW7XZ1KFQqjqJY7dU+/76P/3DCWtKUBdFJBdnGacqMw8fnFEASpaSLVf92LDe87ge1u9pN1+SwKBgQCtlZqvUV98KB3rqYuzY230Oi2G5XI7ddKXWVypreJ1zU+kD/zhzMMjssoiBqqhHB3tZd9aigVza343549z+/ExGKUQoEfAHn1alyG76C5GLkfu4W+zKKxaab7iYqVmg3gKOcEjbuSEzDYMBMRLSRDVTspsouvv6PW5ewqFXyKo/wKBgDcR2/WThg6NvI/jwD3oInuj0FDXaiYecchagnKDej01NTgXinVBnuwx+AcuoH4N0d3ITTUflwvW/5r0UpU72dwkbu8m5CL0C04rsp2eoQCHAUaUZKH0cULGVDyMAEBmQiQTZfEf02Sl09cidMMat662A3piWmdg74NpISoMfJSjAoGAbIPcAcGzGaDSo6KITQrZkBZWo8AIm5daoXch8IldyxsgsIW2J0qkq0p4BrF4NeOn6eMHsEgchD0s2LIQAgf8jh7EAhLRCA+HefyFAD1zwDfqjDGubKf+pz74L/pPQDjr8CiOzyHiBgrLttO8CvyQY2kwLp3jNUXDZ8K9nwcMWe0CgYBp0n8b3wbN8LqT0909zRg/1Gx6nmF6sO72TgDmnmSvEedL11YcfdyWQykL1ctSiomvmjPW+F0Tl3zcjz3Xci884+tc1Y6a37n6QQpvTspVPx7PDQ0UOvoKRrujAian42lbRPbpMaSdtM+T4g6Ce+ocV49wqAbzaeG/kWMuV6h1AA==",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUsuarioDigitosById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "private-key",
+						"type": "text",
+						"value": "MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCdYv4q1s9M57ysm1dCLShVGYBf0An9aXkcsvFSDnrKrhyCDHwReU0mhBcHovKa/11YQZKE14sN+98MCGNLLTV9l5dkvZqV/EaWLdtma+fW1G4vPfHwDErTo+zyInr0YwYguvJGHmFEiobavX56kOaQwABb/39upbGeZM99KCzZaKXLmgPNjEMT7tOaFNqgQUB+TW0XAq1/jy6yh++pr/G0vGHUcqtwIjyFv3KqzkBo0Qf6DNkE65/8YdmkoseNWaC9x6/4x1fPx+QTIDFGSJLQIEC6+n+A9tbkKz5gdb3gXnEMquOHW2Z45kJCj9DW1CWTYXgJtiDcPk19eFgueAS1AgMBAAECggEAZmqfyRLGDV6TqaLgkoC+STpyDmdbyNsU4/cSEHq5ryDEDmC/b8OGz/SO4/pGc1SP0rnA9c8pfu0TRUpECwydTWATNYwoh0eGS34F0s2PLX5JQVbHFJV7L+PxcdO8PUIfH7dnpvdoBmk6vicnoeyfDTzUPwmxTDhosBEb8G7vWH23vTn06uIPW8Z0LxV1xq5F6rCpf+l8dZVjQQLeYHty+YojhrqKS+O+u5KhemVvu2GAZ5IwP+t1rIf+6IfZMe5UmMhGaleMg0x6+1Av1AJHHArGKhpcfHHETl3CBn0virKWjpat/tu7fX+h6sJ5+1siX0mH/NPKKUA58kBzI5KitQKBgQDoHKGrAP+OhrHOUQnSy7ujLi5XOOZTJ0PlAPOekHfequd5NGGcuQ8pD0QQo7alsxyGlIW2OJs2xtgS5kq9WBWZy7pRMq5ijpVMwW7XZ1KFQqjqJY7dU+/76P/3DCWtKUBdFJBdnGacqMw8fnFEASpaSLVf92LDe87ge1u9pN1+SwKBgQCtlZqvUV98KB3rqYuzY230Oi2G5XI7ddKXWVypreJ1zU+kD/zhzMMjssoiBqqhHB3tZd9aigVza343549z+/ExGKUQoEfAHn1alyG76C5GLkfu4W+zKKxaab7iYqVmg3gKOcEjbuSEzDYMBMRLSRDVTspsouvv6PW5ewqFXyKo/wKBgDcR2/WThg6NvI/jwD3oInuj0FDXaiYecchagnKDej01NTgXinVBnuwx+AcuoH4N0d3ITTUflwvW/5r0UpU72dwkbu8m5CL0C04rsp2eoQCHAUaUZKH0cULGVDyMAEBmQiQTZfEf02Sl09cidMMat662A3piWmdg74NpISoMfJSjAoGAbIPcAcGzGaDSo6KITQrZkBZWo8AIm5daoXch8IldyxsgsIW2J0qkq0p4BrF4NeOn6eMHsEgchD0s2LIQAgf8jh7EAhLRCA+HefyFAD1zwDfqjDGubKf+pz74L/pPQDjr8CiOzyHiBgrLttO8CvyQY2kwLp3jNUXDZ8K9nwcMWe0CgYBp0n8b3wbN8LqT0909zRg/1Gx6nmF6sO72TgDmnmSvEedL11YcfdyWQykL1ctSiomvmjPW+F0Tl3zcjz3Xci884+tc1Y6a37n6QQpvTspVPx7PDQ0UOvoKRrujAian42lbRPbpMaSdtM+T4g6Ce+ocV49wqAbzaeG/kWMuV6h1AA=="
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/digitos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"digitos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CalculaDigito",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": 1,\n    \"k\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calculodigito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculodigito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CalculaDigitoInUsuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"n\": 10,\n    \"k\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/calculodigito/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"calculodigito",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUsuarios",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteUsuarioById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateUsuarioById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Marcel Viado\",\n    \"email\": \"blablabla@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/usuarios/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"usuarios",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddChavePublica",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnWL+KtbPTOe8rJtXQi0oVRmAX9AJ/Wl5HLLxUg56yq4cggx8EXlNJoQXB6Lymv9dWEGShNeLDfvfDAhjSy01fZeXZL2alfxGli3bZmvn1tRuLz3x8AxK06Ps8iJ69GMGILryRh5hRIqG2r1+epDmkMAAW/9/bqWxnmTPfSgs2Wily5oDzYxDE+7TmhTaoEFAfk1tFwKtf48usofvqa/xtLxh1HKrcCI8hb9yqs5AaNEH+gzZBOuf/GHZpKLHjVmgvcev+MdXz8fkEyAxRkiS0CBAuvp/gPbW5Cs+YHW94F5xDKrjh1tmeOZCQo/Q1tQlk2F4CbYg3D5NfXhYLngEtQIDAQAB",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/chavepublica/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chavepublica",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
